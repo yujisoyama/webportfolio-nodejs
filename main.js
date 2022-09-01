@@ -20,11 +20,13 @@ con.connect((err)=>{
     } 
 })
 
-app.listen(3000,(err) => {
+const port = process.env.PORT || 3000;
+
+app.listen(port,(err) => {
     if (err) {
         console.log(err)
     } else {
-        console.log('On port 3000')
+        console.log(`On port ${port}`)
     } 
 })
 
