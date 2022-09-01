@@ -6,10 +6,10 @@ app.use(express.json())
 app.use(cors())
 
 const con = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '1234',
-    database: 'myprojects'
+    host: 'us-cdbr-east-06.cleardb.net',
+    user: 'bc36b55756461d',
+    password: '113dd616',
+    database: 'heroku_33a541e37e554dd'
 })
  
 con.connect((err)=>{
