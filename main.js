@@ -57,7 +57,7 @@ app.use(cors())
 const port = process.env.PORT || 3000
 
 const client = new pg.Client({
-    connectionString: 'postgres://sdqbbsjnqnntjx:4028fbebd02f5773f83bc210f2902fb8b117d9613352637d8a37e4992e880402@ec2-107-23-76-12.compute-1.amazonaws.com:5432/d2ordifish0ooa',
+    connectionString: process.env.DATABASE_URL,
     ssl: {
         rejectUnauthorized: false
     }
